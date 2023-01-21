@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="435.045" viewBox="0 0 1460 435.045">
+  <g id="Group_2" data-name="Group 2" transform="translate(-57 -246.825)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(57 254)" fill="#2d2443" stroke="#707070" stroke-width="1">
+      <rect width="1460" height="427" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1459" height="426" fill="none"/>
+    </g>
+    <g id="Group_1" data-name="Group 1">
+      <path id="bg-shorten-desktop" d="M596.08-121.09c0,36.823,14.44,63.2,68.008,80.232s105.324,1.49,157.244,10.4S873.251,35.867,922.145,71.2s151.986,43.912,235.811,8.068,121.823-119.535,96.776-168.881S1181.684-184,950.094-184,596.08-157.912,596.08-121.09ZM-141.411,19.184c0,36.823,24.339,71.685,77.907,88.72S8.115,129.559,60.035,138.47s85.625,46.158,134.519,81.489,151.986,43.912,235.811,8.068S552.186,108.492,527.14,59.146,454.1-35.238,222.5-35.238-141.411-17.639-141.411,19.184Z" transform="translate(248.42 430.825)" fill="#4b3f6b" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
