@@ -4,6 +4,10 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /******************
 Color Scheme
 *****************/
@@ -133,7 +137,7 @@ header .main-nav .main-nav-auth a:hover {
 }
 .search-section .search {
   padding: 10px 0;
-  padding-right: 400px;
+  width: 400px;
   margin-right: 10px;
   border-radius: 10px;
   outline: none;
@@ -286,6 +290,61 @@ header .main-nav .main-nav-auth a:hover {
   z-index: 1;
   height: 100%;
   width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal__body {
+  max-width: 396px;
+  background: #3b3054;
+  width: 331px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 309px;
+  justify-content: space-around;
+  top: 70px;
+  padding: 10px;
+  border-radius: 45px;
+  position: absolute;
+}
+.modal__body hr {
+  width: 100%;
+}
+.modal__body .cross {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+.modal__body__links {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+.modal__body__links li {
+  margin-bottom: 10px;
+}
+.modal__body__links li a {
+  color: #fff;
+}
+.modal__body_cta {
+  margin-top: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__body_cta a {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-right: 170px;
+  font-size: 0.9rem;
+  color: hsl(0deg, 87%, 67%);
 }
 
 @media (max-width: 880px) {
@@ -312,11 +371,12 @@ header .main-nav .main-nav-auth {
     flex-direction: column;
   }
   .search-section .search {
-    padding-right: 155px;
+    max-width: 350px;
     margin: 10px auto;
   }
   .search-section .cta {
-    padding: 5px 109px;
+    padding: 5px 118px;
+    margin-top: 14px;
   }
   .link {
     flex-direction: column;
@@ -349,5 +409,11 @@ header .main-nav .main-nav-auth {
     height: 25em;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
+  }
+  label {
+    display: block;
+    margin-right: 170px;
+    font-size: 0.9rem;
+    color: hsl(0deg, 87%, 67%);
   }
 }/*# sourceMappingURL=main.css.map */

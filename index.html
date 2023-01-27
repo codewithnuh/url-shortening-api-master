@@ -31,7 +31,7 @@
     <div class="container">
       <nav class="main-nav">
         <a href="#"><img src="./images/logo.svg" alt="Shorten"></a>
-        <span class="hambburger"><img src="./images/hambburger.svg" alt=""></span>
+        <span class="hambburger"><img src="./images/hambburger.svg" id="hambburger" alt=""></span>
         <ul class="main-nav-links">
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
@@ -57,31 +57,16 @@
     </section>
     <section class="url-shorten">
 
-      <div class="search-section">
-        <input type="url" class="search" placeholder="  Shorten a link here...">
-        <button class="btn cta" type="submit">Shorten it!</button>
-      </div>
+      <form class="search-section">
+        <input id="url" type="url" name="url" class="search" placeholder="  Shorten a link here..." required>
+        <button class="btn cta" type="button" id="shortenBtn">Shorten it!</button>
+      </form>
       <div class="shorted-links">
         <div class="link">
-          <li>https://www.frontendmentor.io</li>
+          <li id="orginalLink">https://www.frontendmentor.io</li>
           <div>
-            <a href="#">https://relink?446</a> <button class="btn copy">copy</button>
-          </div>
-        </div>
-      </div>
-      <div class="shorted-links">
-        <div class="link">
-          <li>https://www.frontendmentor.io</li>
-          <div>
-            <a href="#">https://relink?446</a> <button class="btn copy">copy</button>
-          </div>
-        </div>
-      </div>
-      <div class="shorted-links">
-        <div class="link">
-          <li>https://www.frontendmentor.io</li>
-          <div>
-            <a href="#">https://relink?446</a> <button class="btn copy">copy</button>
+            <a id="shortedLink" href="#">https://relink?446</a>
+            <button id="copyBtn" class="btn copy">copy</button>
           </div>
         </div>
       </div>
@@ -169,9 +154,21 @@
     </div>
   </footer>
   <div class="modal">
-    <form action="post">
-      <input type="email" name="" id="">
-    </form>
+    <div class="modal__body">
+      <div class="cross" id="cross">
+        <img src="./images/cross.svg" alt="">
+      </div>
+      <ul class="modal__body__links">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+      <hr>
+      <ul class="modal__body_cta">
+        <a href="#">Login</a>
+        <button class="btn">Sign Up</button>
+      </ul>
+    </div>
 
   </div>
   <!--
