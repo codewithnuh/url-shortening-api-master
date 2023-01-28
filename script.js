@@ -28,13 +28,6 @@ const getLinks = () => {
     .catch((err) => {
       return;
     });
-  if (url.innerText === "") {
-    url.style.border = "5px solid hsl(0, 87%, 67%)";
-    url.setAttribute("placeholder", "Please enter url here");
-  }else{
-    url.style.border = "none";
-    url.setAttribute("placeholder", "");
-  }
 };
 shortenBtn.addEventListener("click", (e) => {
   e.preventDefault();

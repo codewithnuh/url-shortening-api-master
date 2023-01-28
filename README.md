@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/N-U-H-WD/url-shortening-api-master.git)
+- Live Site URL: [Netlify](https://url-shortening-apis.netlify.app/)
 
 ## My process
 
