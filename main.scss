@@ -197,6 +197,7 @@ header {
 .stats__card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   gap: 10px;
   .card {
     max-width: 250px;
@@ -374,11 +375,11 @@ label {
   .search-section {
     flex-direction: column;
     .search {
-      max-width: 350px;
+      max-width: 300px;
       margin: 10px auto;
     }
     .cta {
-      padding: 5px 118px;
+      padding: 5px 110px;
       margin-top: 14px;
     }
   }
@@ -397,6 +398,7 @@ label {
   }
   .stats__card {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
     gap: 70px;
     .card {
       margin: auto;
@@ -414,11 +416,5 @@ label {
 
       grid-template-columns: repeat(1, 1fr);
     }
-  }
-  label {
-    display: block;
-    margin-right: 170px;
-    font-size: 0.9rem;
-    color: $secondary;
   }
 }

@@ -2,17 +2,18 @@
 const HAMBURGER = document.getElementById("hambburger");
 const CROSS_ICON = document.getElementById("cross");
 const MODAL = document.getElementsByClassName("modal");
+const orignalLink = document.getElementById("orginalLink");
+const shortedLink = document.getElementById("shortedLink");
+const url = document.getElementById("url");
+const shortenBtn = document.getElementById("shortenBtn");
+const copyBtn = document.getElementById("copyBtn");
+// Basic Functionality
 HAMBURGER.addEventListener("click", () => {
   MODAL[0].style.display = "flex";
 });
 CROSS_ICON.addEventListener("click", () => {
   MODAL[0].style.display = "none";
 });
-const orignalLink = document.getElementById("orginalLink");
-const shortedLink = document.getElementById("shortedLink");
-const url = document.getElementById("url");
-const shortenBtn = document.getElementById("shortenBtn");
-const copyBtn = document.getElementById("copyBtn");
 //Main Functionallity
 const getLinks = () => {
   fetch(`https://api.shrtco.de/v2/shorten?url=${url.value}`)
@@ -27,18 +28,31 @@ const getLinks = () => {
     .catch((err) => {
       return;
     });
+  if (url.innerText === "") {
+    url.style.border = "5px solid hsl(0, 87%, 67%)";
+    url.setAttribute("placeholder", "Please enter url here");
+  }
 };
 shortenBtn.addEventListener("click", (e) => {
   e.preventDefault();
   getLinks();
 });
 // Copy Button
-copyBtn.addEventListener("click", function myFunction() {
-  // Get the text field
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(shortedLink.innerText);
+const textToCopy = shortedLink.innerHTML;
+copyBtn.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(textToCopy);
+    copyBtn.innerText = "copied";
+    copyBtn.style.background = "#3b3054";
+    copyBtn.style.color = "#fff";
+    copyBtn.style.borderColor = "#3b3054";
+    setTimeout(() => {
+      copyBtn.innerText = "copy";
+      copyBtn.style.background = "hsl(180, 66%, 49%)";
+      copyBtn.style.color = "#fff";
+      copyBtn.style.borderColor = "hsl(180, 66%, 49%)";
+    }, 3000);
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
 });

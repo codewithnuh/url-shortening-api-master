@@ -198,6 +198,7 @@ header .main-nav .main-nav-auth a:hover {
 .stats__card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   gap: 10px;
 }
 .stats__card .card {
@@ -371,11 +372,11 @@ header .main-nav .main-nav-auth {
     flex-direction: column;
   }
   .search-section .search {
-    max-width: 350px;
+    max-width: 300px;
     margin: 10px auto;
   }
   .search-section .cta {
-    padding: 5px 118px;
+    padding: 5px 110px;
     margin-top: 14px;
   }
   .link {
@@ -393,6 +394,7 @@ header .main-nav .main-nav-auth {
   }
   .stats__card {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
     gap: 70px;
   }
   .stats__card .card {
@@ -409,11 +411,5 @@ header .main-nav .main-nav-auth {
     height: 25em;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
-  }
-  label {
-    display: block;
-    margin-right: 170px;
-    font-size: 0.9rem;
-    color: hsl(0deg, 87%, 67%);
   }
 }/*# sourceMappingURL=main.css.map */
