@@ -31,6 +31,9 @@ const getLinks = async() => {
       return;
     });
   };
+  copyBtn.addEventListener('click',(e)=>{
+e.preventDefault();
+  })
 // Copy Button
 const textToCopy = SHORTENLINKED;
 copyBtn.addEventListener("click", async () => {
