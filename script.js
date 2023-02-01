@@ -14,8 +14,9 @@ HAMBURGER.addEventListener("click", () => {
 CROSS_ICON.addEventListener("click", () => {
   MODAL[0].style.display = "none";
 });
+let SHORTENLINKED;
 //Main Functionallity
-const getLinks = () => {
+const getLinks = async() => {
   fetch(`https://api.shrtco.de/v2/shorten?url=${url.value}`)
     .then((res) => {
       return res.json();
@@ -24,17 +25,14 @@ const getLinks = () => {
       shortedLink.setAttribute("href", `${res.result.full_short_link}`);
       shortedLink.innerText = res.result.full_short_link;
       orignalLink.innerText = res.result.original_link;
+      SHORTENLINKED=res.result.full_short_link;
     })
     .catch((err) => {
       return;
     });
-};
-shortenBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  getLinks();
-});
+  };
 // Copy Button
-const textToCopy = shortedLink.innerHTML;
+const textToCopy = SHORTENLINKED;
 copyBtn.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(textToCopy);
