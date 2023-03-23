@@ -50,34 +50,43 @@ Header
 header {
   padding: 30px 0;
 }
+
 header .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
 header .main-nav a {
   display: inline-flex;
 }
+
 header .main-nav a img {
   width: 100px;
 }
+
 header .main-nav .main-nav-links {
   margin-left: 10px;
   flex: 1;
 }
+
 header .main-nav .main-nav-links li {
   padding: 0 10px;
 }
+
 header .main-nav .main-nav-links li a:hover {
   color: #35323e;
 }
+
 header .main-nav .main-nav-auth {
   display: flex;
   align-items: center;
 }
+
 header .main-nav .main-nav-auth a {
   padding: 0 20px;
 }
+
 header .main-nav .main-nav-auth a:hover {
   color: #35323e;
 }
@@ -105,21 +114,26 @@ header .main-nav .main-nav-auth a:hover {
   justify-content: space-between;
   padding: 20px 0;
 }
+
 .hero .col-1 {
   flex-basis: 50%;
 }
+
 .hero .col-1 h1 {
   font-size: 3rem;
   color: #35323e;
   line-height: 1;
   margin: 10px 0;
 }
+
 .hero .col-1 p {
   color: hsl(252deg, 2%, 53%);
 }
+
 .hero .col-1 .btn {
   margin-top: 30px;
 }
+
 .hero .col-2 {
   flex-basis: 50%;
 }
@@ -129,12 +143,13 @@ header .main-nav .main-nav-auth a:hover {
   align-items: center;
   justify-content: center;
   padding: 40px 0;
-  background-image: url("/images/bg-shorten-desktop.svg");
+  background: #3b3054;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
 }
+
 .search-section .search {
   padding: 10px 0;
   width: 400px;
@@ -144,6 +159,7 @@ header .main-nav .main-nav-auth a:hover {
   border: none;
   text-align: center;
 }
+
 .search-section .cta {
   border-radius: 10px;
 }
@@ -156,13 +172,16 @@ header .main-nav .main-nav-auth a:hover {
   background: #fff;
   margin: 10px 0;
 }
+
 .shorted-links .link li {
   list-style: none;
 }
+
 .shorted-links .link a {
   margin: 0 10px;
   color: hsl(180deg, 66%, 49%);
 }
+
 .shorted-links .link .copy {
   padding: 5px 20px;
   border-radius: 10px;
@@ -177,20 +196,24 @@ header .main-nav .main-nav-auth a:hover {
   align-items: center;
   height: 27em;
 }
+
 .statistics .heading-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .statistics .stats__heading {
   width: 500px;
   text-align: center;
   margin-bottom: 100px;
 }
+
 .statistics .stats__heading h2 {
   color: #35323e;
 }
+
 .statistics .stats__heading p {
   color: hsl(252deg, 2%, 53%);
 }
@@ -201,6 +224,7 @@ header .main-nav .main-nav-auth a:hover {
   justify-items: center;
   gap: 10px;
 }
+
 .stats__card .card {
   max-width: 250px;
   background: #fff;
@@ -208,15 +232,18 @@ header .main-nav .main-nav-auth a:hover {
   border-radius: 20px;
   color: #35323e;
 }
+
 .stats__card .card p {
   color: hsl(252deg, 2%, 53%);
   font-weight: 400;
 }
+
 .stats__card .card div {
   position: relative;
   top: -15px;
   max-width: 270px;
 }
+
 .stats__card .card .profile {
   width: 37px;
   background: #3b3054;
@@ -237,10 +264,11 @@ header .main-nav .main-nav-auth a:hover {
   align-items: center;
   justify-content: center;
   height: 200px;
-  background: url("/images/bg-boost-desktop.svg");
+  background: #3b3054;
   background-position: center;
   color: #fff;
 }
+
 .boost-your-link div {
   text-align: center;
 }
@@ -249,37 +277,45 @@ header .main-nav .main-nav-auth a:hover {
   background: #35323e;
   padding: 50px;
 }
+
 .footer .inner-footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
 }
+
 .footer .inner-footer .footer-logo {
   width: 150px;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .footer .inner-footer .footer-logo img {
   margin: 10px 0;
   cursor: pointer;
 }
+
 .footer .inner-footer .footer-links {
   display: flex;
   flex-direction: column;
 }
+
 .footer .inner-footer .footer-links li {
   cursor: pointer;
 }
+
 .footer .inner-footer .footer-links span {
   color: #fff;
   font-weight: 600;
 }
+
 .footer .inner-footer .footer-links ul {
   display: block;
   color: hsl(252deg, 2%, 53%);
 }
+
 .footer .inner-footer .footer-links ul li:hover {
   color: hsl(180deg, 66%, 49%);
 }
@@ -295,6 +331,7 @@ header .main-nav .main-nav-auth a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .modal__body {
   max-width: 396px;
   background: #3b3054;
@@ -310,25 +347,31 @@ header .main-nav .main-nav-auth a:hover {
   border-radius: 45px;
   position: absolute;
 }
+
 .modal__body hr {
   width: 100%;
 }
+
 .modal__body .cross {
   position: absolute;
   top: 20px;
   right: 45px;
 }
+
 .modal__body__links {
   flex-direction: column;
   text-align: center;
   margin-top: 30px;
 }
+
 .modal__body__links li {
   margin-bottom: 10px;
 }
+
 .modal__body__links li a {
   color: #fff;
 }
+
 .modal__body_cta {
   margin-top: 20px;
   flex-direction: column;
@@ -336,6 +379,7 @@ header .main-nav .main-nav-auth a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .modal__body_cta a {
   margin-bottom: 10px;
   color: #fff;
@@ -352,64 +396,83 @@ label {
   header .main-nav {
     justify-content: space-between;
   }
+
   header .main-nav .main-nav-links,
-header .main-nav .main-nav-auth {
+  header .main-nav .main-nav-auth {
     display: none;
   }
+
   .hambburger {
     display: block;
   }
+
   .container {
     overflow: hidden;
   }
+
   .hero {
     flex-direction: column-reverse;
   }
+
   .hero .col-1 h1 {
     font-size: 3rem;
   }
+
   .search-section {
     flex-direction: column;
   }
+
   .search-section .search {
     max-width: 300px;
     margin: 10px auto;
   }
+
   .search-section .cta {
     padding: 5px 98px;
     margin-top: 14px;
   }
+
   .link {
     flex-direction: column;
   }
+
   .link div {
     display: flex;
     flex-direction: column;
   }
+
   .link div a {
     margin: 10px 0;
   }
+
   .heading-box .stats__heading {
     width: 100%;
   }
+
   .stats__card {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 70px;
   }
+
   .stats__card .card {
     margin: auto;
   }
+
   .statistics {
     height: 70em;
     padding: 50px 0;
   }
+
   .footer {
     padding: none;
   }
+
   .footer .inner-footer {
     height: 25em;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
