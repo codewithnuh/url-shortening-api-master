@@ -16,7 +16,7 @@ CROSS_ICON.addEventListener("click", () => {
 });
 let SHORTENLINKED;
 //Main Functionallity
-const getLinks = async() => {
+const getLinks = async () => {
   fetch(`https://api.shrtco.de/v2/shorten?url=${url.value}`)
     .then((res) => {
       return res.json();
@@ -25,16 +25,15 @@ const getLinks = async() => {
       shortedLink.setAttribute("href", `${res.result.full_short_link}`);
       shortedLink.innerText = res.result.full_short_link;
       orignalLink.innerText = res.result.original_link;
-      SHORTENLINKED=res.result.full_short_link;
+      SHORTENLINKED = res.result.full_short_link;
     })
     .catch((err) => {
       return;
     });
-  };
-  shortenBtn.addEventListener('click',async(e)=>{
-e.preventDefault();
-await getLinks();
-  })
+};
+shortenBtn.addEventListener('click', (e) => {
+  getLinks();
+})
 // Copy Button
 const textToCopy = SHORTENLINKED;
 copyBtn.addEventListener("click", async () => {
