@@ -21,11 +21,11 @@ const getLinks = async () => {
     .then((res) => {
       return res.json();
     })
-    .then((res) => {
+    .then(async (res) => {
       shortedLink.setAttribute("href", `${res.result.full_short_link}`);
       shortedLink.innerText = res.result.full_short_link;
       orignalLink.innerText = res.result.original_link;
-      SHORTENLINKED = res.result.full_short_link;
+      SHORTENLINKED = await res.result.full_short_link;
     })
     .catch((err) => {
       return;
